@@ -85,5 +85,4 @@ class UserService implements UserServiceInterface
         }
         return $user;
     }
-
 }

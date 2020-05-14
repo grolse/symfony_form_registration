@@ -31,6 +31,7 @@
         "symfony/yaml": "5.0.*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.3",
         "friendsofphp/php-cs-fixer": "^2.16",
         "squizlabs/php_codesniffer": "*",
         "symfony/debug-pack": "*",
@@ -73,7 +74,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "csfix": "php-cs-fixer fix src/ --rules=@PSR2"
     },
     "conflict": {
         "symfony/symfony": "*"
